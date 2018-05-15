@@ -10,7 +10,8 @@ body {
 
 .container {
   display: grid;
-  grid-gap: 1.7 rem; }
+  grid-gap: 1.7 rem;
+  overflow: auto; }
 
 .menu {
   border: 1px solid #ccc;
@@ -114,5 +115,9 @@ body {
     grid-column: span 3;
     font-size: 0.6rem;
     text-align: center; }
+
+@media (max-width: 540px) {
+  .menu ul {
+    grid-template-columns: 1fr; } }
 
 /*# sourceMappingURL=style.css.map */
